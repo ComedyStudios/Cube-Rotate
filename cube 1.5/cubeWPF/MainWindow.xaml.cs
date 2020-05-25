@@ -21,9 +21,6 @@ using System.Runtime.InteropServices;
 
 namespace cubeWPF
 {
-    /// <summary>
-    /// Interaktionslogik für MainWindow.xaml
-    /// </summary>
     public partial class MainWindow : Window
     {
         
@@ -59,10 +56,15 @@ namespace cubeWPF
         };
         
          private List<Line> _lines = new List<Line>();
+         DispatcherTimer timer = new DispatcherTimer();
         public MainWindow()
         {
             
             InitializeComponent();
+
+
+            timer.Interval = TimeSpan.FromMilliseconds(40);
+            timer.Tick += VectorRotation;
 
             float centerX = (float)grid.Width / 2;
             float centerY = (float)grid.Height / 2;
@@ -89,7 +91,6 @@ namespace cubeWPF
                 grid.Children.Add(line);
             }
             grid.UpdateLayout();
-
             
         }
 
@@ -99,12 +100,21 @@ namespace cubeWPF
             
             if (e.Key == Key.Enter)
             {
-                var timer = new DispatcherTimer();
-                timer.Interval = TimeSpan.FromMilliseconds(40);
-                timer.Tick += VectorRotation;
+               
                 timer.Start();
             }
         }
+        protected override void OnKeyUp(KeyEventArgs e)
+        {
+            base.OnKeyUp(e);
+
+            if (e.Key == Key.Enter)
+            {
+                timer.Stop();
+            }
+        }
+
+
 
         private void VectorRotation(object sender, EventArgs e)
         {
@@ -171,21 +181,21 @@ namespace cubeWPF
         }
         private Cordinate RotatingOnTheYAxis(double x, double y, double z)
         {
-            Cordinate CurrentCubeCordinates = new Cordinate();
+            Cordinate currentCubeCordinates = new Cordinate();
             var angleToRadian = rotatingAngle * Math.PI / 180;
-            CurrentCubeCordinates.x = x * Math.Cos(angleToRadian) + z * Math.Sin(angleToRadian);
-            CurrentCubeCordinates.y = y; 
-            CurrentCubeCordinates.z = x * -Math.Sin(angleToRadian) + z * Math.Cos(angleToRadian);
-            return CurrentCubeCordinates;
+            currentCubeCordinates.x = x * Math.Cos(angleToRadian) + z * Math.Sin(angleToRadian);
+            currentCubeCordinates.y = y; 
+            currentCubeCordinates.z = x * -Math.Sin(angleToRadian) + z * Math.Cos(angleToRadian);
+            return currentCubeCordinates;
         }
         private Cordinate RotatingOnTheXAxis(double x, double y, double z)
         {
-            Cordinate CurrentCubeCordinates = new Cordinate();
+            Cordinate currentCubeCordinates = new Cordinate();
             var angleToRadian = rotatingAngle * Math.PI / 180;
-            CurrentCubeCordinates.x = x;
-            CurrentCubeCordinates.y = y * Math.Cos(angleToRadian) - Math.Sin(angleToRadian) * z;
-            CurrentCubeCordinates.z = y * Math.Sin(angleToRadian) + z * Math.Cos(angleToRadian);
-            return CurrentCubeCordinates;
+            currentCubeCordinates.x = x;
+            currentCubeCordinates.y = y * Math.Cos(angleToRadian) - Math.Sin(angleToRadian) * z;
+            currentCubeCordinates.z = y * Math.Sin(angleToRadian) + z * Math.Cos(angleToRadian);
+            return currentCubeCordinates;
         }
     }
 }
