@@ -98,19 +98,37 @@ namespace cubeWPF
         {
             base.OnKeyDown(e);            
             
-            if (e.Key == Key.Enter)
+
+            switch (e.Key)
             {
-               
-                timer.Start();
+                case Key.A:
+                    rotatingAngle = 1; 
+                    timer.Start();
+                    break;
+                case Key.D:
+                    rotatingAngle = -1;
+                    timer.Start();
+                    break;
+
+
             }
         }
         protected override void OnKeyUp(KeyEventArgs e)
         {
             base.OnKeyUp(e);
 
-            if (e.Key == Key.Enter)
+            switch (e.Key)
             {
-                timer.Stop();
+                case Key.A:
+                    rotatingAngle = -1;
+                    timer.Stop();
+                    break;
+                case Key.D:
+                    rotatingAngle = 1;
+                    timer.Stop();
+                    break;
+
+
             }
         }
 
