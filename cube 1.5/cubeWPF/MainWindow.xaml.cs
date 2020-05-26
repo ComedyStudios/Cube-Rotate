@@ -124,8 +124,6 @@ namespace cubeWPF
                     break;
 
             }
-
-            
         }
         protected override void OnKeyUp(KeyEventArgs e)
         {
