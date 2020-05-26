@@ -42,14 +42,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="cubeWPF.exe" size="13248">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="cubeWPF.exe" size="13760">
       <assemblyIdentity name="cubeWPF" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>2BsNhCXqB8MkHFiSYSnXbzXiAT0MBuQ0t6nTb6yGFHE=</dsig:DigestValue>
+        <dsig:DigestValue>JthnCknjA7fPAXutRtChON1tGUOsO/RGsam8Rn5cZgc=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

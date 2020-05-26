@@ -24,7 +24,8 @@ namespace cubeWPF
     public partial class MainWindow : Window
     {
         
-        private double rotatingAngle = 1;
+        private double rotatingAngleX = 1;
+        private double rotatingAngleY = 1; 
 
         private List<Cordinate> _points = new List<Cordinate> { 
             new Cordinate { x = -100, y = -100, z = -100 },
@@ -64,7 +65,7 @@ namespace cubeWPF
 
 
             timer.Interval = TimeSpan.FromMilliseconds(40);
-            timer.Tick += VectorRotation;
+            //timer.Tick += VectorRotationX;
 
             float centerX = (float)grid.Width / 2;
             float centerY = (float)grid.Height / 2;
@@ -96,22 +97,35 @@ namespace cubeWPF
 
         protected override void OnKeyDown(KeyEventArgs e)
         {
-            base.OnKeyDown(e);            
-            
-
+            base.OnKeyDown(e);
+            timer.Tick -= VectorRotationX;
+            timer.Tick -= VectorRotationY;
             switch (e.Key)
             {
                 case Key.A:
-                    rotatingAngle = 1; 
+                    rotatingAngleY = 1;
+                    timer.Tick += VectorRotationX;
                     timer.Start();
                     break;
                 case Key.D:
-                    rotatingAngle = -1;
+                    rotatingAngleY = -1;
+                    timer.Tick += VectorRotationX;
+                    timer.Start();
+                    break;
+                case Key.W:
+                    rotatingAngleX = 1;
+                    timer.Tick += VectorRotationY;
+                    timer.Start();
+                    break;
+                case Key.S:
+                    rotatingAngleX = -1;
+                    timer.Tick += VectorRotationY;
                     timer.Start();
                     break;
 
-
             }
+
+            
         }
         protected override void OnKeyUp(KeyEventArgs e)
         {
@@ -120,11 +134,15 @@ namespace cubeWPF
             switch (e.Key)
             {
                 case Key.A:
-                    rotatingAngle = -1;
                     timer.Stop();
                     break;
                 case Key.D:
-                    rotatingAngle = 1;
+                    timer.Stop();
+                    break;
+                case Key.S:
+                    timer.Stop();
+                    break;
+                case Key.W:
                     timer.Stop();
                     break;
 
@@ -134,9 +152,13 @@ namespace cubeWPF
 
 
 
-        private void VectorRotation(object sender, EventArgs e)
+        private void VectorRotationX(object sender, EventArgs e)
         {
             RotatingOnY();
+        }
+
+        private void VectorRotationY(object sender, EventArgs e)
+        {
             RotaingOnX();
         }
 
@@ -200,7 +222,7 @@ namespace cubeWPF
         private Cordinate RotatingOnTheYAxis(double x, double y, double z)
         {
             Cordinate currentCubeCordinates = new Cordinate();
-            var angleToRadian = rotatingAngle * Math.PI / 180;
+            var angleToRadian = rotatingAngleY * Math.PI / 180;
             currentCubeCordinates.x = x * Math.Cos(angleToRadian) + z * Math.Sin(angleToRadian);
             currentCubeCordinates.y = y; 
             currentCubeCordinates.z = x * -Math.Sin(angleToRadian) + z * Math.Cos(angleToRadian);
@@ -209,7 +231,7 @@ namespace cubeWPF
         private Cordinate RotatingOnTheXAxis(double x, double y, double z)
         {
             Cordinate currentCubeCordinates = new Cordinate();
-            var angleToRadian = rotatingAngle * Math.PI / 180;
+            var angleToRadian = rotatingAngleX * Math.PI / 180;
             currentCubeCordinates.x = x;
             currentCubeCordinates.y = y * Math.Cos(angleToRadian) - Math.Sin(angleToRadian) * z;
             currentCubeCordinates.z = y * Math.Sin(angleToRadian) + z * Math.Cos(angleToRadian);
