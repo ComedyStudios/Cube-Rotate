@@ -1,5 +1,7 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Windows;
 using System.Windows.Input;
 using System.Windows.Shapes;
@@ -39,18 +41,29 @@ namespace cubeWPF
            new Lines {id1 = 5, id2 =6 },
            new Lines {id1 = 6, id2 =7 },
            new Lines {id1 = 7, id2 =4 },
-
-           
         };
+
+        private string jsonPath = @".\json1.json";
 
         private List<Line> _lines = new List<Line>();
         DispatcherTimer timer = new DispatcherTimer();
         
         private List<int> _unvisiablePointsId = new List <int>();
+
+        private JsonFormat Variables;
         public MainWindow()
         {
-            InitializeComponent();   
+            InitializeComponent();
+
+            Variables = JsonRead();
+
+            if (Variables != null)
+            {
+                _Lines = Variables.l;
+                _points = Variables.p;
+            }
             
+
             float centerX = (float)grid.Width / 2;
             float centerY = (float)grid.Height / 2;
             timer.Interval = new TimeSpan(0,0,0,0,30);
@@ -74,6 +87,8 @@ namespace cubeWPF
             {
                 grid.Children.Add(line);
             }
+
+            MakeUnvisible();
         }
 
         private void VectorRotationX(object sender, EventArgs e)
@@ -84,6 +99,16 @@ namespace cubeWPF
         private void VectorRotationY(object sender, EventArgs e)
         {
             RotaingOnX();
+        }
+
+        protected override void OnClosed(EventArgs e)
+        {
+            // TODO: write to json
+            Variables = new JsonFormat();
+            Variables.p = _points;
+            Variables.l = _Lines;
+            JsonWrite(Variables);
+            base.OnClosed(e);
         }
 
         protected override void OnKeyDown(KeyEventArgs e)
@@ -258,6 +283,21 @@ namespace cubeWPF
                     }
                 }
             }
+        }
+
+        private JsonFormat JsonRead()
+        {
+            var jsonContent = File.ReadAllText(jsonPath);
+            JsonFormat deserializedProduct = JsonConvert.DeserializeObject<JsonFormat>(jsonContent);
+            return deserializedProduct;
+
+        }
+
+        private void JsonWrite(JsonFormat json)
+        {
+            string jsonSring = JsonConvert.SerializeObject(json);
+
+            File.WriteAllText(jsonPath, jsonSring);
         }
     }
 }
