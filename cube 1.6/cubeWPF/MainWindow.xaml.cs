@@ -21,9 +21,7 @@ namespace cubeWPF
             new Cordinate { x = 100, y = 100, z = 100 },
             new Cordinate { x = -100, y = 100, z = 100 },
             new Cordinate { x = -100, y = -100, z = 100 },
-            new Cordinate { x = 100, y = -100, z = 100 },
-
-
+            new Cordinate { x = 100, y = -100, z = 100 }
         };
         private List<Lines> _Lines = new List<Lines>
         {
@@ -45,7 +43,6 @@ namespace cubeWPF
 
         private List<Line> _lines = new List<Line>();
         DispatcherTimer timer = new DispatcherTimer();
-        
         private List<int> _unvisiablePointsId = new List <int>();
         public MainWindow()
         {
