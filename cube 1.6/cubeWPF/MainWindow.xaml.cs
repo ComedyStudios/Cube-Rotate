@@ -1,7 +1,5 @@
-﻿using Newtonsoft.Json;
-using System;
+﻿using System;
 using System.Collections.Generic;
-using System.IO;
 using System.Windows;
 using System.Windows.Input;
 using System.Windows.Shapes;
@@ -47,17 +45,16 @@ namespace cubeWPF
 
         private List<Line> _lines = new List<Line>();
         DispatcherTimer timer = new DispatcherTimer();
-        
-        private List<int> _unvisiablePointsId = new List <int>();
 
         private JsonFormat Variables;
 
         Real real = new Real();
+        Json json = new Json();
         public MainWindow()
         {
             InitializeComponent();
 
-            Variables = JsonRead();
+            Variables = json.Read(jsonPath);
 
             if (Variables != null)
             {
@@ -78,7 +75,7 @@ namespace cubeWPF
                 grid.Children.Add(line);
             }
 
-            MakeUnvisible();
+            real.MakeUnivsible(_Lines, _lines, _points);
         }
 
         protected override void OnClosed(EventArgs e)
@@ -89,7 +86,7 @@ namespace cubeWPF
                 p = _points,
                 l = _Lines
             };
-            JsonWrite(Variables);
+            json.Wirte(Variables, jsonPath);
             base.OnClosed(e);
         }
 
@@ -173,7 +170,7 @@ namespace cubeWPF
                 i2++;
             }
 
-            MakeUnvisible();
+            real.MakeUnivsible(_Lines, _lines, _points);
         }
 
         private void RotatingOnY(object sender, EventArgs e)
@@ -204,46 +201,7 @@ namespace cubeWPF
                 i2++;
             }
 
-            MakeUnvisible();
-        }
-
-        private void MakeUnvisible()
-        {
-            _unvisiablePointsId.Clear();
-            double furthestPoint = 0;
-            foreach (var point in _points)
-            {
-                if (point.z > furthestPoint)
-                {
-                    furthestPoint = point.z;
-                }
-            }
-
-            for (var i = 0; i < _points.Count; i++)
-            {
-                if (_points[i].z == furthestPoint)
-                {
-                    _unvisiablePointsId.Add(i);
-                }
-            }
-
-            real.MakeUnvisible(_unvisiablePointsId,_Lines,_lines);
-        }
-
-
-        private JsonFormat JsonRead()
-        {
-            var jsonContent = File.ReadAllText(jsonPath);
-            JsonFormat deserializedProduct = JsonConvert.DeserializeObject<JsonFormat>(jsonContent);
-            return deserializedProduct;
-
-        }
-
-        private void JsonWrite(JsonFormat json)
-        {
-            string jsonSring = JsonConvert.SerializeObject(json);
-
-            File.WriteAllText(jsonPath, jsonSring);
+            real.MakeUnivsible(_Lines, _lines, _points);
         }
     }
 }

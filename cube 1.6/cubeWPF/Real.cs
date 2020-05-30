@@ -33,7 +33,32 @@ namespace cubeWPF
             return linesR;
         }
 
-        public void MakeUnvisible(List<int> unvisiablePointsId, List<Lines> linesV, List<Line>linesR)
+
+        public void MakeUnivsible( List<Lines> linesV, List<Line> linesR, List<Cordinate>p)
+        {
+            var unvisiablePointsId = new List<int>();
+            double furthestPoint = 0;
+            foreach (var point in p)
+            {
+                if (point.z > furthestPoint)
+                {
+                    furthestPoint = point.z;
+                }
+            }
+
+            for (var i = 0; i < p.Count; i++)
+            {
+                if (p[i].z == furthestPoint)
+                {
+                    unvisiablePointsId.Add(i);
+                }
+            }
+
+            CheckVisibility(unvisiablePointsId, linesV, linesR);
+
+            //return unvisiablePointsId;
+        }
+        public void CheckVisibility(List<int> unvisiablePointsId, List<Lines> linesV, List<Line>linesR)
         {
             foreach (var invisibleId in unvisiablePointsId)
             {
