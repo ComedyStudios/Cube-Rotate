@@ -11,7 +11,10 @@ namespace cubeWPF
     {
         
         private double rotatingAngleX = 1;
-        private double rotatingAngleY = 1; 
+        private double rotatingAngleY = 1;
+
+        private float centerX;
+        private float centerY;
 
         private List<Cordinate> _points = new List<Cordinate> { 
             new Cordinate { x = -100, y = -100, z = -100 },
@@ -40,16 +43,15 @@ namespace cubeWPF
            new Lines {id1 = 6, id2 =7 },
            new Lines {id1 = 7, id2 =4 },
         };
-
-        private string jsonPath = @".\json1.json";
-
         private List<Line> _lines = new List<Line>();
+
         DispatcherTimer timer = new DispatcherTimer();
 
+        private string jsonPath = @".\json1.json";
         private JsonFormat Variables;
-
-        Real real = new Real();
         Json json = new Json();
+        
+        Real real = new Real();
         public MainWindow()
         {
             InitializeComponent();
@@ -63,8 +65,8 @@ namespace cubeWPF
             }
             
 
-            float centerX = (float)grid.Width / 2;
-            float centerY = (float)grid.Height / 2;
+            centerX = (float)grid.Width / 2;
+            centerY = (float)grid.Height / 2;
             timer.Interval = new TimeSpan(0,0,0,0,30);
 
             
@@ -80,7 +82,6 @@ namespace cubeWPF
 
         protected override void OnClosed(EventArgs e)
         {
-            // TODO: write to json
             Variables = new JsonFormat
             {
                 p = _points,
@@ -94,28 +95,28 @@ namespace cubeWPF
         {
             base.OnKeyDown(e);
 
-            timer.Tick -= RotatingOnY;
-            timer.Tick -= RotaitngOnX;
+            timer.Tick -= RotaitingOnY;
+            timer.Tick -= RotaitingOnX;
             switch (e.Key)
             {
                 case Key.A:
                     rotatingAngleY = 1;
-                    timer.Tick += RotatingOnY;
+                    timer.Tick += RotaitingOnY;
                     timer.Start();
                     break;
                 case Key.D:
                     rotatingAngleY = -1;
-                    timer.Tick +=RotatingOnY;
+                    timer.Tick +=RotaitingOnY;
                     timer.Start();
                     break;
                 case Key.W:
                     rotatingAngleX = 1;
-                    timer.Tick += RotaitngOnX;
+                    timer.Tick += RotaitingOnX;
                     timer.Start();
                     break;
                 case Key.S:
                     rotatingAngleX = -1;
-                    timer.Tick += RotaitngOnX;
+                    timer.Tick += RotaitingOnX;
                     timer.Start();
                     break;
 
@@ -142,66 +143,14 @@ namespace cubeWPF
             }
         }
 
-        private void RotaitngOnX(object sender, EventArgs e)
+        private void RotaitingOnX(object sender, EventArgs e)
         {
-            List<Cordinate> newp = new List<Cordinate> ();
-            foreach (var p in _points)
-            {
-                var xVirtual = new Virtual();
-                newp.Add(xVirtual.RotatingOnTheXAxis(p.x, p.y, p.z, rotatingAngleX));
-            };
-
-            var i = 0; 
-            foreach(var line in _lines)
-            {
-                var centerX = grid.Width / 2;
-                var centerY = grid.Height / 2;
-                line.X1 = newp[_Lines[i].id1].x + centerX;
-                line.Y1 = newp[_Lines[i].id1].y * (-1) + centerY;
-                line.X2 = newp[_Lines[i].id2].x + centerX;
-                line.Y2 = newp[_Lines[i].id2].y*(-1)   +centerY;
-                i++;    
-            }
-
-            var i2 = 0; 
-            while (i2 < _points.Count)
-            {
-                _points[i2] = newp[i2];
-                i2++;
-            }
-
-            real.MakeUnivsible(_Lines, _lines, _points);
+            real.RotatingOnX(_points, _lines, _Lines, centerX, centerY, rotatingAngleX);
         }
 
-        private void RotatingOnY(object sender, EventArgs e)
+        private void RotaitingOnY(object sender, EventArgs e)
         {
-            List<Cordinate> newp = new List<Cordinate>();
-            foreach (var p in _points)
-            {
-                var yVirtual = new Virtual();
-                newp.Add(yVirtual.RotatingOnTheYAxis(p.x, p.y, p.z,rotatingAngleY));
-            };
-
-            var i = 0;
-            foreach (var line in _lines)
-            {
-                var centerX = grid.Width / 2;
-                var centerY = grid.Height / 2;
-                line.X1 = newp[_Lines[i].id1].x + centerX;
-                line.Y1 = newp[_Lines[i].id1].y * (-1) + centerY;
-                line.X2 = newp[_Lines[i].id2].x + centerX;
-                line.Y2 = newp[_Lines[i].id2].y * (-1) + centerY;
-                i++;
-            }
-
-            var i2 = 0;
-            while (i2 < _points.Count)
-            {
-                _points[i2] = newp[i2];
-                i2++;
-            }
-
-            real.MakeUnivsible(_Lines, _lines, _points);
+            real.RotatingOnY(_points,_lines,_Lines,centerX,centerY,rotatingAngleY);
         }
     }
 }

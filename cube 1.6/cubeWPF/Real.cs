@@ -78,5 +78,62 @@ namespace cubeWPF
                 }
             }
         }
+
+        public void RotatingOnY( List<Cordinate>point, List<Line>lineR,List<Lines> linesV,  float centerX, float centerY, double rotatingAngleY)
+        {
+            List<Cordinate> newp = new List<Cordinate>();
+            foreach (var p in point)
+            {
+                var yVirtual = new Virtual();
+                newp.Add(yVirtual.RotatingOnTheYAxis(p.x, p.y, p.z, rotatingAngleY));
+            };
+
+            var i = 0;
+            foreach (var line in lineR)
+            {
+                line.X1 = newp[linesV[i].id1].x + centerX;
+                line.Y1 = newp[linesV[i].id1].y * (-1) + centerY;
+                line.X2 = newp[linesV[i].id2].x + centerX;
+                line.Y2 = newp[linesV[i].id2].y * (-1) + centerY;
+                i++;
+            }
+
+            var i2 = 0;
+            while (i2 < point.Count)
+            {
+                point[i2] = newp[i2];
+                i2++;
+            }
+
+            MakeUnivsible(linesV, lineR, point );
+        }
+        public void RotatingOnX( List<Cordinate> point, List<Line> lineR, List<Lines> linesV, float centerX, float centerY, double rotatingAngleX)
+        {
+            List<Cordinate> newp = new List<Cordinate>();
+            foreach (var p in point)
+            {
+                var yVirtual = new Virtual();
+                newp.Add(yVirtual.RotatingOnTheXAxis(p.x, p.y, p.z, rotatingAngleX));
+            };
+
+            var i = 0;
+            foreach (var line in lineR)
+            {
+                line.X1 = newp[linesV[i].id1].x + centerX;
+                line.Y1 = newp[linesV[i].id1].y * (-1) + centerY;
+                line.X2 = newp[linesV[i].id2].x + centerX;
+                line.Y2 = newp[linesV[i].id2].y * (-1) + centerY;
+                i++;
+            }
+
+            var i2 = 0;
+            while (i2 < point.Count)
+            {
+                point[i2] = newp[i2];
+                i2++;
+            }
+
+            MakeUnivsible(linesV, lineR, point);
+        }
     }
 }
