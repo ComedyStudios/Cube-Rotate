@@ -51,6 +51,8 @@ namespace cubeWPF
         private List<int> _unvisiablePointsId = new List <int>();
 
         private JsonFormat Variables;
+
+        Real real = new Real();
         public MainWindow()
         {
             InitializeComponent();
@@ -68,20 +70,8 @@ namespace cubeWPF
             float centerY = (float)grid.Height / 2;
             timer.Interval = new TimeSpan(0,0,0,0,30);
 
-            foreach (var line in _Lines)
-            {
-                _lines.Add  (
-                                new Line 
-                                {
-                                    Stroke = System.Windows.Media.Brushes.Black,
-                                    X1 = centerX + _points[line.id1].x,
-                                    Y1 = centerY + _points[line.id1].y * (-1),
-                                    X2 = centerX + _points[line.id2].x,
-                                    Y2 = centerY + _points[line.id2].y * (-1),
-                                    StrokeThickness = 3,
-                                }
-                                 );
-            }
+            
+           _lines = real.MakeLine(_Lines,_lines,_points,centerX,centerY);
 
             foreach (Line line in _lines)
             {
@@ -91,22 +81,14 @@ namespace cubeWPF
             MakeUnvisible();
         }
 
-        private void VectorRotationX(object sender, EventArgs e)
-        {
-            RotatingOnY();
-        }
-
-        private void VectorRotationY(object sender, EventArgs e)
-        {
-            RotaingOnX();
-        }
-
         protected override void OnClosed(EventArgs e)
         {
             // TODO: write to json
-            Variables = new JsonFormat();
-            Variables.p = _points;
-            Variables.l = _Lines;
+            Variables = new JsonFormat
+            {
+                p = _points,
+                l = _Lines
+            };
             JsonWrite(Variables);
             base.OnClosed(e);
         }
@@ -115,28 +97,28 @@ namespace cubeWPF
         {
             base.OnKeyDown(e);
 
-            timer.Tick -= VectorRotationX;
-            timer.Tick -= VectorRotationY;
+            timer.Tick -= RotatingOnY;
+            timer.Tick -= RotaitngOnX;
             switch (e.Key)
             {
                 case Key.A:
                     rotatingAngleY = 1;
-                    timer.Tick += VectorRotationX;
+                    timer.Tick += RotatingOnY;
                     timer.Start();
                     break;
                 case Key.D:
                     rotatingAngleY = -1;
-                    timer.Tick += VectorRotationX;
+                    timer.Tick +=RotatingOnY;
                     timer.Start();
                     break;
                 case Key.W:
                     rotatingAngleX = 1;
-                    timer.Tick += VectorRotationY;
+                    timer.Tick += RotaitngOnX;
                     timer.Start();
                     break;
                 case Key.S:
                     rotatingAngleX = -1;
-                    timer.Tick += VectorRotationY;
+                    timer.Tick += RotaitngOnX;
                     timer.Start();
                     break;
 
@@ -163,12 +145,13 @@ namespace cubeWPF
             }
         }
 
-        private void RotaingOnX()
+        private void RotaitngOnX(object sender, EventArgs e)
         {
             List<Cordinate> newp = new List<Cordinate> ();
             foreach (var p in _points)
             {
-                newp.Add(RotatingOnTheXAxis(p.x, p.y, p.z));
+                var xVirtual = new Virtual();
+                newp.Add(xVirtual.RotatingOnTheXAxis(p.x, p.y, p.z, rotatingAngleX));
             };
 
             var i = 0; 
@@ -193,12 +176,13 @@ namespace cubeWPF
             MakeUnvisible();
         }
 
-        private void RotatingOnY()
+        private void RotatingOnY(object sender, EventArgs e)
         {
             List<Cordinate> newp = new List<Cordinate>();
             foreach (var p in _points)
             {
-                newp.Add(RotatingOnTheYAxis(p.x, p.y, p.z));
+                var yVirtual = new Virtual();
+                newp.Add(yVirtual.RotatingOnTheYAxis(p.x, p.y, p.z,rotatingAngleY));
             };
 
             var i = 0;
@@ -222,24 +206,6 @@ namespace cubeWPF
 
             MakeUnvisible();
         }
-        private Cordinate RotatingOnTheYAxis(double x, double y, double z)
-        {
-            Cordinate currentCubeCordinates = new Cordinate();
-            var angleToRadian = rotatingAngleY * Math.PI / 180;
-            currentCubeCordinates.x = x * Math.Cos(angleToRadian) + z * Math.Sin(angleToRadian);
-            currentCubeCordinates.y = y; 
-            currentCubeCordinates.z = x * -Math.Sin(angleToRadian) + z * Math.Cos(angleToRadian);
-            return currentCubeCordinates;
-        }
-        private Cordinate RotatingOnTheXAxis(double x, double y, double z)
-        {
-            Cordinate currentCubeCordinates = new Cordinate();
-            var angleToRadian = rotatingAngleX * Math.PI / 180;
-            currentCubeCordinates.x = x;
-            currentCubeCordinates.y = y * Math.Cos(angleToRadian) - Math.Sin(angleToRadian) * z;
-            currentCubeCordinates.z = y * Math.Sin(angleToRadian) + z * Math.Cos(angleToRadian);
-            return currentCubeCordinates;
-        }
 
         private void MakeUnvisible()
         {
@@ -261,29 +227,9 @@ namespace cubeWPF
                 }
             }
 
-            checkIfInvisible();
+            real.MakeUnvisible(_unvisiablePointsId,_Lines,_lines);
         }
 
-        private void checkIfInvisible()
-        {
-            foreach (var invisibleId in _unvisiablePointsId)
-            {
-                for (int j = 0; j < _Lines.Count; j++)
-                {
-                    var line = _Lines[j];
-                    if (line.id1 == invisibleId || line.id2 == invisibleId ||
-                        line.id1 == invisibleId && line.id2 == invisibleId)
-                    {
-                        _lines[j].Opacity = 0;
-                    }
-                    else
-
-                    {
-                        _lines[j].Opacity = 1;
-                    }
-                }
-            }
-        }
 
         private JsonFormat JsonRead()
         {
