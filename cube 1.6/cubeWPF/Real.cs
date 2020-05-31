@@ -34,7 +34,7 @@ namespace cubeWPF
         }
 
 
-        public void MakeUnivsible( List<Lines> linesV, List<Line> linesR, List<Cordinate>p)
+        public void MakeUnvsible( List<Lines> linesV, List<Line> linesR, List<Cordinate>p)
         {
             var unvisiablePointsId = new List<int>();
             double furthestPoint = 0;
@@ -105,7 +105,7 @@ namespace cubeWPF
                 i2++;
             }
 
-            MakeUnivsible(linesV, lineR, point );
+            MakeUnvsible(linesV, lineR, point );
         }
         public void RotatingOnX( List<Cordinate> point, List<Line> lineR, List<Lines> linesV, float centerX, float centerY, double rotatingAngleX)
         {
@@ -133,7 +133,7 @@ namespace cubeWPF
                 i2++;
             }
 
-            MakeUnivsible(linesV, lineR, point);
+            MakeUnvsible(linesV, lineR, point);
         }
     }
 }

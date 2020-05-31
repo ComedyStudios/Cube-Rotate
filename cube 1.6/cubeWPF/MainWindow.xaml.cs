@@ -77,7 +77,7 @@ namespace cubeWPF
                 grid.Children.Add(line);
             }
 
-            real.MakeUnivsible(_Lines, _lines, _points);
+            real.MakeUnvsible(_Lines, _lines, _points);
         }
 
         protected override void OnClosed(EventArgs e)
@@ -87,7 +87,11 @@ namespace cubeWPF
                 p = _points,
                 l = _Lines
             };
-            json.Wirte(Variables, jsonPath);
+            if (save.IsChecked == true)
+            {
+                json.Wirte(Variables, jsonPath);
+            }
+            
             base.OnClosed(e);
         }
 
@@ -151,6 +155,23 @@ namespace cubeWPF
         private void RotaitingOnY(object sender, EventArgs e)
         {
             real.RotatingOnY(_points,_lines,_Lines,centerX,centerY,rotatingAngleY);
+        }
+
+        private void ButtonBase_OnClicktn_reset(object sender, RoutedEventArgs e)
+        {
+            _points = new List<Cordinate>
+            {
+                new Cordinate {x = -100, y = -100, z = -100},
+                new Cordinate {x = -100, y = 100, z = -100},
+                new Cordinate {x = 100, y = 100, z = -100},
+                new Cordinate {x = 100, y = -100, z = -100},
+                new Cordinate {x = 100, y = 100, z = 100},
+                new Cordinate {x = -100, y = 100, z = 100},
+                new Cordinate {x = -100, y = -100, z = 100},
+                new Cordinate {x = 100, y = -100, z = 100},
+
+            };
+            real.RotatingOnX(_points, _lines, _Lines, centerX, centerY, 0);
         }
     }
 }
