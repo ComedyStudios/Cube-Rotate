@@ -52,6 +52,8 @@ namespace cubeWPF
         Json json = new Json();
         
         Real real = new Real();
+
+        action a = new action();
         public MainWindow()
         {
             InitializeComponent();
@@ -82,14 +84,9 @@ namespace cubeWPF
 
         protected override void OnClosed(EventArgs e)
         {
-            Variables = new JsonFormat
-            {
-                p = _points,
-                l = _Lines
-            };
             if (save.IsChecked == true)
             {
-                json.Wirte(Variables, jsonPath);
+                a.safeRotation(Variables, _points, _Lines,jsonPath);
             }
             
             base.OnClosed(e);
@@ -159,19 +156,7 @@ namespace cubeWPF
 
         private void ButtonBase_OnClicktn_reset(object sender, RoutedEventArgs e)
         {
-            _points = new List<Cordinate>
-            {
-                new Cordinate {x = -100, y = -100, z = -100},
-                new Cordinate {x = -100, y = 100, z = -100},
-                new Cordinate {x = 100, y = 100, z = -100},
-                new Cordinate {x = 100, y = -100, z = -100},
-                new Cordinate {x = 100, y = 100, z = 100},
-                new Cordinate {x = -100, y = 100, z = 100},
-                new Cordinate {x = -100, y = -100, z = 100},
-                new Cordinate {x = 100, y = -100, z = 100},
-
-            };
-            real.RotatingOnX(_points, _lines, _Lines, centerX, centerY, 0);
+           _points = a.reset(_points, _Lines, _lines, centerY, centerX);
         }
     }
 }
