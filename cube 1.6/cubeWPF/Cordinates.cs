@@ -6,10 +6,11 @@ using System.Threading.Tasks;
 
 namespace cubeWPF
 {
-    class Cordinate
+    public class Cordinate
     {
         public double x;
         public double y;
         public double z;
     }
+    
 }
