@@ -1,5 +1,9 @@
 <<<<<<< Updated upstream:cube 1.7/cubeWPF/obj/Debug/MainWindow.g.cs
+<<<<<<< Updated upstream:cube 1.7/cubeWPF/obj/Debug/MainWindow.g.cs
 ﻿#pragma checksum "..\..\MainWindow.xaml" "{8829d00f-11b8-4213-878b-770e8597ac16}" "9024EC04EB2BE1AF29A9AFEFA5151D5583FB5D215CFFEDFE87AFEB4B0FD4260A"
+=======
+﻿#pragma checksum "..\..\MainWindow.xaml" "{8829d00f-11b8-4213-878b-770e8597ac16}" "13CB8C3C486909AA32F6C619CEBF627EF231708C813E417242872F141BCDB5AB"
+>>>>>>> Stashed changes:cube 1.6/cubeWPF/obj/Debug/MainWindow.g.cs
 =======
 ﻿#pragma checksum "..\..\MainWindow.xaml" "{8829d00f-11b8-4213-878b-770e8597ac16}" "13CB8C3C486909AA32F6C619CEBF627EF231708C813E417242872F141BCDB5AB"
 >>>>>>> Stashed changes:cube 1.6/cubeWPF/obj/Debug/MainWindow.g.cs
