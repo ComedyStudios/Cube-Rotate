@@ -1,0 +1,165 @@
+D:\mischa\programin\c#\cube\cube2\cubeWPF\cubeWPF\bin\Debug\cubeWPF.exe.config
+D:\mischa\programin\c#\cube\cube2\cubeWPF\cubeWPF\bin\Debug\cubeWPF.exe
+D:\mischa\programin\c#\cube\cube2\cubeWPF\cubeWPF\bin\Debug\cubeWPF.pdb
+D:\mischa\programin\c#\cube\cube2\cubeWPF\cubeWPF\obj\Debug\cubeWPF.csprojAssemblyReference.cache
+D:\mischa\programin\c#\cube\cube2\cubeWPF\cubeWPF\obj\Debug\MainWindow.g.cs
+D:\mischa\programin\c#\cube\cube2\cubeWPF\cubeWPF\obj\Debug\App.g.cs
+D:\mischa\programin\c#\cube\cube2\cubeWPF\cubeWPF\obj\Debug\cubeWPF_MarkupCompile.cache
+D:\mischa\programin\c#\cube\cube2\cubeWPF\cubeWPF\obj\Debug\cubeWPF_MarkupCompile.lref
+D:\mischa\programin\c#\cube\cube2\cubeWPF\cubeWPF\obj\Debug\MainWindow.baml
+D:\mischa\programin\c#\cube\cube2\cubeWPF\cubeWPF\obj\Debug\cubeWPF.g.resources
+D:\mischa\programin\c#\cube\cube2\cubeWPF\cubeWPF\obj\Debug\cubeWPF.Properties.Resources.resources
+D:\mischa\programin\c#\cube\cube2\cubeWPF\cubeWPF\obj\Debug\cubeWPF.csproj.GenerateResource.cache
+D:\mischa\programin\c#\cube\cube2\cubeWPF\cubeWPF\obj\Debug\cubeWPF.csproj.CoreCompileInputs.cache
+D:\mischa\programin\c#\cube\cube2\cubeWPF\cubeWPF\obj\Debug\cubeWPF.exe
+D:\mischa\programin\c#\cube\cube2\cubeWPF\cubeWPF\obj\Debug\cubeWPF.pdb
+D:\mischa\programin\c#\cube\cube2 - Kopie\cubeWPF\cubeWPF\bin\Debug\cubeWPF.exe.config
+D:\mischa\programin\c#\cube\cube2 - Kopie\cubeWPF\cubeWPF\bin\Debug\cubeWPF.exe
+D:\mischa\programin\c#\cube\cube2 - Kopie\cubeWPF\cubeWPF\bin\Debug\cubeWPF.pdb
+D:\mischa\programin\c#\cube\cube2 - Kopie\cubeWPF\cubeWPF\obj\Debug\cubeWPF.csprojAssemblyReference.cache
+D:\mischa\programin\c#\cube\cube2 - Kopie\cubeWPF\cubeWPF\obj\Debug\MainWindow.g.cs
+D:\mischa\programin\c#\cube\cube2 - Kopie\cubeWPF\cubeWPF\obj\Debug\App.g.cs
+D:\mischa\programin\c#\cube\cube2 - Kopie\cubeWPF\cubeWPF\obj\Debug\cubeWPF_MarkupCompile.cache
+D:\mischa\programin\c#\cube\cube2 - Kopie\cubeWPF\cubeWPF\obj\Debug\cubeWPF_MarkupCompile.lref
+D:\mischa\programin\c#\cube\cube2 - Kopie\cubeWPF\cubeWPF\obj\Debug\MainWindow.baml
+D:\mischa\programin\c#\cube\cube2 - Kopie\cubeWPF\cubeWPF\obj\Debug\cubeWPF.g.resources
+D:\mischa\programin\c#\cube\cube2 - Kopie\cubeWPF\cubeWPF\obj\Debug\cubeWPF.Properties.Resources.resources
+D:\mischa\programin\c#\cube\cube2 - Kopie\cubeWPF\cubeWPF\obj\Debug\cubeWPF.csproj.GenerateResource.cache
+D:\mischa\programin\c#\cube\cube2 - Kopie\cubeWPF\cubeWPF\obj\Debug\cubeWPF.csproj.CoreCompileInputs.cache
+D:\mischa\programin\c#\cube\cube2 - Kopie\cubeWPF\cubeWPF\obj\Debug\cubeWPF.exe
+D:\mischa\programin\c#\cube\cube2 - Kopie\cubeWPF\cubeWPF\obj\Debug\cubeWPF.pdb
+D:\mischa\programin\c#\cube\cube2 - Kopie\cube3D\cubeWPF\bin\Debug\cubeWPF.exe.config
+D:\mischa\programin\c#\cube\cube2 - Kopie\cube3D\cubeWPF\bin\Debug\cubeWPF.exe
+D:\mischa\programin\c#\cube\cube2 - Kopie\cube3D\cubeWPF\bin\Debug\cubeWPF.pdb
+D:\mischa\programin\c#\cube\cube2 - Kopie\cube3D\cubeWPF\obj\Debug\cubeWPF.csprojAssemblyReference.cache
+D:\mischa\programin\c#\cube\cube2 - Kopie\cube3D\cubeWPF\obj\Debug\MainWindow.g.cs
+D:\mischa\programin\c#\cube\cube2 - Kopie\cube3D\cubeWPF\obj\Debug\App.g.cs
+D:\mischa\programin\c#\cube\cube2 - Kopie\cube3D\cubeWPF\obj\Debug\cubeWPF_MarkupCompile.cache
+D:\mischa\programin\c#\cube\cube2 - Kopie\cube3D\cubeWPF\obj\Debug\cubeWPF_MarkupCompile.lref
+D:\mischa\programin\c#\cube\cube2 - Kopie\cube3D\cubeWPF\obj\Debug\MainWindow.baml
+D:\mischa\programin\c#\cube\cube2 - Kopie\cube3D\cubeWPF\obj\Debug\cubeWPF.g.resources
+D:\mischa\programin\c#\cube\cube2 - Kopie\cube3D\cubeWPF\obj\Debug\cubeWPF.Properties.Resources.resources
+D:\mischa\programin\c#\cube\cube2 - Kopie\cube3D\cubeWPF\obj\Debug\cubeWPF.csproj.GenerateResource.cache
+D:\mischa\programin\c#\cube\cube2 - Kopie\cube3D\cubeWPF\obj\Debug\cubeWPF.csproj.CoreCompileInputs.cache
+D:\mischa\programin\c#\cube\cube2 - Kopie\cube3D\cubeWPF\obj\Debug\cubeWPF.exe
+D:\mischa\programin\c#\cube\cube2 - Kopie\cube3D\cubeWPF\obj\Debug\cubeWPF.pdb
+D:\mischa\programin\c#\cube\cube2 - Kopie\Cube3D- better Code\cubeWPF\bin\Debug\cubeWPF.exe.config
+D:\mischa\programin\c#\cube\cube2 - Kopie\Cube3D- better Code\cubeWPF\bin\Debug\cubeWPF.exe
+D:\mischa\programin\c#\cube\cube2 - Kopie\Cube3D- better Code\cubeWPF\bin\Debug\cubeWPF.pdb
+D:\mischa\programin\c#\cube\cube2 - Kopie\Cube3D- better Code\cubeWPF\obj\Debug\cubeWPF.csprojAssemblyReference.cache
+D:\mischa\programin\c#\cube\cube2 - Kopie\Cube3D- better Code\cubeWPF\obj\Debug\MainWindow.g.cs
+D:\mischa\programin\c#\cube\cube2 - Kopie\Cube3D- better Code\cubeWPF\obj\Debug\App.g.cs
+D:\mischa\programin\c#\cube\cube2 - Kopie\Cube3D- better Code\cubeWPF\obj\Debug\cubeWPF_MarkupCompile.cache
+D:\mischa\programin\c#\cube\cube2 - Kopie\Cube3D- better Code\cubeWPF\obj\Debug\cubeWPF_MarkupCompile.lref
+D:\mischa\programin\c#\cube\cube2 - Kopie\Cube3D- better Code\cubeWPF\obj\Debug\MainWindow.baml
+D:\mischa\programin\c#\cube\cube2 - Kopie\Cube3D- better Code\cubeWPF\obj\Debug\cubeWPF.g.resources
+D:\mischa\programin\c#\cube\cube2 - Kopie\Cube3D- better Code\cubeWPF\obj\Debug\cubeWPF.Properties.Resources.resources
+D:\mischa\programin\c#\cube\cube2 - Kopie\Cube3D- better Code\cubeWPF\obj\Debug\cubeWPF.csproj.GenerateResource.cache
+D:\mischa\programin\c#\cube\cube2 - Kopie\Cube3D- better Code\cubeWPF\obj\Debug\cubeWPF.csproj.CoreCompileInputs.cache
+D:\mischa\programin\c#\cube\cube2 - Kopie\Cube3D- better Code\cubeWPF\obj\Debug\cubeWPF.exe
+D:\mischa\programin\c#\cube\cube2 - Kopie\Cube3D- better Code\cubeWPF\obj\Debug\cubeWPF.pdb
+D:\mischa\programin\c#\cube\cube2 - Kopie\Cube3D- better Code - Kopie\cubeWPF\bin\Debug\cubeWPF.exe.config
+D:\mischa\programin\c#\cube\cube2 - Kopie\Cube3D- better Code - Kopie\cubeWPF\bin\Debug\cubeWPF.exe
+D:\mischa\programin\c#\cube\cube2 - Kopie\Cube3D- better Code - Kopie\cubeWPF\bin\Debug\cubeWPF.pdb
+D:\mischa\programin\c#\cube\cube2 - Kopie\Cube3D- better Code - Kopie\cubeWPF\obj\Debug\cubeWPF.csprojAssemblyReference.cache
+D:\mischa\programin\c#\cube\cube2 - Kopie\Cube3D- better Code - Kopie\cubeWPF\obj\Debug\MainWindow.g.cs
+D:\mischa\programin\c#\cube\cube2 - Kopie\Cube3D- better Code - Kopie\cubeWPF\obj\Debug\App.g.cs
+D:\mischa\programin\c#\cube\cube2 - Kopie\Cube3D- better Code - Kopie\cubeWPF\obj\Debug\cubeWPF_MarkupCompile.cache
+D:\mischa\programin\c#\cube\cube2 - Kopie\Cube3D- better Code - Kopie\cubeWPF\obj\Debug\cubeWPF_MarkupCompile.lref
+D:\mischa\programin\c#\cube\cube2 - Kopie\Cube3D- better Code - Kopie\cubeWPF\obj\Debug\MainWindow.baml
+D:\mischa\programin\c#\cube\cube2 - Kopie\Cube3D- better Code - Kopie\cubeWPF\obj\Debug\cubeWPF.g.resources
+D:\mischa\programin\c#\cube\cube2 - Kopie\Cube3D- better Code - Kopie\cubeWPF\obj\Debug\cubeWPF.Properties.Resources.resources
+D:\mischa\programin\c#\cube\cube2 - Kopie\Cube3D- better Code - Kopie\cubeWPF\obj\Debug\cubeWPF.csproj.GenerateResource.cache
+D:\mischa\programin\c#\cube\cube2 - Kopie\Cube3D- better Code - Kopie\cubeWPF\obj\Debug\cubeWPF.csproj.CoreCompileInputs.cache
+D:\mischa\programin\c#\cube\cube2 - Kopie\Cube3D- better Code - Kopie\cubeWPF\obj\Debug\cubeWPF.exe
+D:\mischa\programin\c#\cube\cube2 - Kopie\Cube3D- better Code - Kopie\cubeWPF\obj\Debug\cubeWPF.pdb
+D:\mischa\programin\c#\cube\cube2 - Kopie\Cube3D- better Code - Kopie\cubeWPF\bin\Debug\cubeWPF.exe.manifest
+D:\mischa\programin\c#\cube\cube2 - Kopie\Cube3D- better Code - Kopie\cubeWPF\bin\Debug\cubeWPF.application
+D:\mischa\programin\c#\cube\cube2 - Kopie\Cube3D- better Code - Kopie\cubeWPF\obj\Debug\cubeWPF.exe.manifest
+D:\mischa\programin\c#\cube\cube2 - Kopie\Cube3D- better Code - Kopie\cubeWPF\obj\Debug\cubeWPF.application
+D:\mischa\programin\c#\cube\cube2 - Kopie\cube 1.5\cubeWPF\bin\Debug\cubeWPF.exe.config
+D:\mischa\programin\c#\cube\cube2 - Kopie\cube 1.5\cubeWPF\bin\Debug\cubeWPF.exe.manifest
+D:\mischa\programin\c#\cube\cube2 - Kopie\cube 1.5\cubeWPF\bin\Debug\cubeWPF.application
+D:\mischa\programin\c#\cube\cube2 - Kopie\cube 1.5\cubeWPF\bin\Debug\cubeWPF.exe
+D:\mischa\programin\c#\cube\cube2 - Kopie\cube 1.5\cubeWPF\bin\Debug\cubeWPF.pdb
+D:\mischa\programin\c#\cube\cube2 - Kopie\cube 1.5\cubeWPF\obj\Debug\cubeWPF.csprojAssemblyReference.cache
+D:\mischa\programin\c#\cube\cube2 - Kopie\cube 1.5\cubeWPF\obj\Debug\MainWindow.g.cs
+D:\mischa\programin\c#\cube\cube2 - Kopie\cube 1.5\cubeWPF\obj\Debug\App.g.cs
+D:\mischa\programin\c#\cube\cube2 - Kopie\cube 1.5\cubeWPF\obj\Debug\cubeWPF_MarkupCompile.cache
+D:\mischa\programin\c#\cube\cube2 - Kopie\cube 1.5\cubeWPF\obj\Debug\cubeWPF_MarkupCompile.lref
+D:\mischa\programin\c#\cube\cube2 - Kopie\cube 1.5\cubeWPF\obj\Debug\MainWindow.baml
+D:\mischa\programin\c#\cube\cube2 - Kopie\cube 1.5\cubeWPF\obj\Debug\cubeWPF.g.resources
+D:\mischa\programin\c#\cube\cube2 - Kopie\cube 1.5\cubeWPF\obj\Debug\cubeWPF.Properties.Resources.resources
+D:\mischa\programin\c#\cube\cube2 - Kopie\cube 1.5\cubeWPF\obj\Debug\cubeWPF.csproj.GenerateResource.cache
+D:\mischa\programin\c#\cube\cube2 - Kopie\cube 1.5\cubeWPF\obj\Debug\cubeWPF.csproj.CoreCompileInputs.cache
+D:\mischa\programin\c#\cube\cube2 - Kopie\cube 1.5\cubeWPF\obj\Debug\cubeWPF.exe.manifest
+D:\mischa\programin\c#\cube\cube2 - Kopie\cube 1.5\cubeWPF\obj\Debug\cubeWPF.application
+D:\mischa\programin\c#\cube\cube2 - Kopie\cube 1.5\cubeWPF\obj\Debug\cubeWPF.exe
+D:\mischa\programin\c#\cube\cube2 - Kopie\cube 1.5\cubeWPF\obj\Debug\cubeWPF.pdb
+D:\mischa\programin\c#\github repo\cube\Cube-Rotate\cube 1.5\cubeWPF\bin\Debug\cubeWPF.exe.config
+D:\mischa\programin\c#\github repo\cube\Cube-Rotate\cube 1.5\cubeWPF\bin\Debug\cubeWPF.exe.manifest
+D:\mischa\programin\c#\github repo\cube\Cube-Rotate\cube 1.5\cubeWPF\bin\Debug\cubeWPF.application
+D:\mischa\programin\c#\github repo\cube\Cube-Rotate\cube 1.5\cubeWPF\bin\Debug\cubeWPF.exe
+D:\mischa\programin\c#\github repo\cube\Cube-Rotate\cube 1.5\cubeWPF\bin\Debug\cubeWPF.pdb
+D:\mischa\programin\c#\github repo\cube\Cube-Rotate\cube 1.5\cubeWPF\obj\Debug\cubeWPF.csprojAssemblyReference.cache
+D:\mischa\programin\c#\github repo\cube\Cube-Rotate\cube 1.5\cubeWPF\obj\Debug\MainWindow.g.cs
+D:\mischa\programin\c#\github repo\cube\Cube-Rotate\cube 1.5\cubeWPF\obj\Debug\App.g.cs
+D:\mischa\programin\c#\github repo\cube\Cube-Rotate\cube 1.5\cubeWPF\obj\Debug\cubeWPF_MarkupCompile.cache
+D:\mischa\programin\c#\github repo\cube\Cube-Rotate\cube 1.5\cubeWPF\obj\Debug\cubeWPF_MarkupCompile.lref
+D:\mischa\programin\c#\github repo\cube\Cube-Rotate\cube 1.5\cubeWPF\obj\Debug\MainWindow.baml
+D:\mischa\programin\c#\github repo\cube\Cube-Rotate\cube 1.5\cubeWPF\obj\Debug\cubeWPF.g.resources
+D:\mischa\programin\c#\github repo\cube\Cube-Rotate\cube 1.5\cubeWPF\obj\Debug\cubeWPF.Properties.Resources.resources
+D:\mischa\programin\c#\github repo\cube\Cube-Rotate\cube 1.5\cubeWPF\obj\Debug\cubeWPF.csproj.GenerateResource.cache
+D:\mischa\programin\c#\github repo\cube\Cube-Rotate\cube 1.5\cubeWPF\obj\Debug\cubeWPF.csproj.CoreCompileInputs.cache
+D:\mischa\programin\c#\github repo\cube\Cube-Rotate\cube 1.5\cubeWPF\obj\Debug\cubeWPF.exe.manifest
+D:\mischa\programin\c#\github repo\cube\Cube-Rotate\cube 1.5\cubeWPF\obj\Debug\cubeWPF.application
+D:\mischa\programin\c#\github repo\cube\Cube-Rotate\cube 1.5\cubeWPF\obj\Debug\cubeWPF.exe
+D:\mischa\programin\c#\github repo\cube\Cube-Rotate\cube 1.5\cubeWPF\obj\Debug\cubeWPF.pdb
+D:\mischa\programin\c#\github repo\cube\Cube-Rotate\cube 1.6\cubeWPF\bin\Debug\cubeWPF.exe.config
+D:\mischa\programin\c#\github repo\cube\Cube-Rotate\cube 1.6\cubeWPF\bin\Debug\cubeWPF.exe.manifest
+D:\mischa\programin\c#\github repo\cube\Cube-Rotate\cube 1.6\cubeWPF\bin\Debug\cubeWPF.application
+D:\mischa\programin\c#\github repo\cube\Cube-Rotate\cube 1.6\cubeWPF\bin\Debug\cubeWPF.exe
+D:\mischa\programin\c#\github repo\cube\Cube-Rotate\cube 1.6\cubeWPF\bin\Debug\cubeWPF.pdb
+D:\mischa\programin\c#\github repo\cube\Cube-Rotate\cube 1.6\cubeWPF\obj\Debug\MainWindow.g.cs
+D:\mischa\programin\c#\github repo\cube\Cube-Rotate\cube 1.6\cubeWPF\obj\Debug\App.g.cs
+D:\mischa\programin\c#\github repo\cube\Cube-Rotate\cube 1.6\cubeWPF\obj\Debug\cubeWPF_MarkupCompile.cache
+D:\mischa\programin\c#\github repo\cube\Cube-Rotate\cube 1.6\cubeWPF\obj\Debug\cubeWPF_MarkupCompile.lref
+D:\mischa\programin\c#\github repo\cube\Cube-Rotate\cube 1.6\cubeWPF\obj\Debug\MainWindow.baml
+D:\mischa\programin\c#\github repo\cube\Cube-Rotate\cube 1.6\cubeWPF\obj\Debug\cubeWPF.g.resources
+D:\mischa\programin\c#\github repo\cube\Cube-Rotate\cube 1.6\cubeWPF\obj\Debug\cubeWPF.Properties.Resources.resources
+D:\mischa\programin\c#\github repo\cube\Cube-Rotate\cube 1.6\cubeWPF\obj\Debug\cubeWPF.csproj.GenerateResource.cache
+D:\mischa\programin\c#\github repo\cube\Cube-Rotate\cube 1.6\cubeWPF\obj\Debug\cubeWPF.csproj.CoreCompileInputs.cache
+D:\mischa\programin\c#\github repo\cube\Cube-Rotate\cube 1.6\cubeWPF\obj\Debug\cubeWPF.exe.manifest
+D:\mischa\programin\c#\github repo\cube\Cube-Rotate\cube 1.6\cubeWPF\obj\Debug\cubeWPF.application
+D:\mischa\programin\c#\github repo\cube\Cube-Rotate\cube 1.6\cubeWPF\obj\Debug\cubeWPF.exe
+D:\mischa\programin\c#\github repo\cube\Cube-Rotate\cube 1.6\cubeWPF\obj\Debug\cubeWPF.pdb
+D:\mischa\programin\c#\github repo\cube\Cube-Rotate\cube 1.6\cubeWPF\bin\Debug\Newtonsoft.Json.dll
+D:\mischa\programin\c#\github repo\cube\Cube-Rotate\cube 1.6\cubeWPF\bin\Debug\Newtonsoft.Json.xml
+D:\mischa\programin\c#\github repo\cube\Cube-Rotate\cube 1.6\cubeWPF\obj\Debug\cubeWPF.csproj.CopyComplete
+D:\mischa\programin\c#\github repo\cube\Cube-Rotate\cube 1.6\cubeWPF\bin\Debug\json1.json
+D:\mischa\programin\c#\github repo\cube\Cube-Rotate\cube 1.6\cubeWPF\obj\Debug\cubeWPF_Content.g.cs
+D:\mischa\programin\c#\github repo\cube\Cube-Rotate\cube 1.6\cubeWPF\obj\Debug\cubeWPF.csprojAssemblyReference.cache
+D:\mischa\programin\c#\github repo\cube\Cube-Rotate\cube 1.7\cubeWPF\bin\Debug\json1.json
+D:\mischa\programin\c#\github repo\cube\Cube-Rotate\cube 1.7\cubeWPF\bin\Debug\cubeWPF.exe.config
+D:\mischa\programin\c#\github repo\cube\Cube-Rotate\cube 1.7\cubeWPF\bin\Debug\cubeWPF.exe.manifest
+D:\mischa\programin\c#\github repo\cube\Cube-Rotate\cube 1.7\cubeWPF\bin\Debug\cubeWPF.application
+D:\mischa\programin\c#\github repo\cube\Cube-Rotate\cube 1.7\cubeWPF\bin\Debug\cubeWPF.exe
+D:\mischa\programin\c#\github repo\cube\Cube-Rotate\cube 1.7\cubeWPF\bin\Debug\cubeWPF.pdb
+D:\mischa\programin\c#\github repo\cube\Cube-Rotate\cube 1.7\cubeWPF\bin\Debug\Newtonsoft.Json.dll
+D:\mischa\programin\c#\github repo\cube\Cube-Rotate\cube 1.7\cubeWPF\bin\Debug\Newtonsoft.Json.xml
+D:\mischa\programin\c#\github repo\cube\Cube-Rotate\cube 1.7\cubeWPF\obj\Debug\cubeWPF.csprojAssemblyReference.cache
+D:\mischa\programin\c#\github repo\cube\Cube-Rotate\cube 1.7\cubeWPF\obj\Debug\MainWindow.g.cs
+D:\mischa\programin\c#\github repo\cube\Cube-Rotate\cube 1.7\cubeWPF\obj\Debug\App.g.cs
+D:\mischa\programin\c#\github repo\cube\Cube-Rotate\cube 1.7\cubeWPF\obj\Debug\cubeWPF_Content.g.cs
+D:\mischa\programin\c#\github repo\cube\Cube-Rotate\cube 1.7\cubeWPF\obj\Debug\cubeWPF_MarkupCompile.cache
+D:\mischa\programin\c#\github repo\cube\Cube-Rotate\cube 1.7\cubeWPF\obj\Debug\cubeWPF_MarkupCompile.lref
+D:\mischa\programin\c#\github repo\cube\Cube-Rotate\cube 1.7\cubeWPF\obj\Debug\MainWindow.baml
+D:\mischa\programin\c#\github repo\cube\Cube-Rotate\cube 1.7\cubeWPF\obj\Debug\cubeWPF.g.resources
+D:\mischa\programin\c#\github repo\cube\Cube-Rotate\cube 1.7\cubeWPF\obj\Debug\cubeWPF.Properties.Resources.resources
+D:\mischa\programin\c#\github repo\cube\Cube-Rotate\cube 1.7\cubeWPF\obj\Debug\cubeWPF.csproj.GenerateResource.cache
+D:\mischa\programin\c#\github repo\cube\Cube-Rotate\cube 1.7\cubeWPF\obj\Debug\cubeWPF.csproj.CoreCompileInputs.cache
+D:\mischa\programin\c#\github repo\cube\Cube-Rotate\cube 1.7\cubeWPF\obj\Debug\cubeWPF.exe.manifest
+D:\mischa\programin\c#\github repo\cube\Cube-Rotate\cube 1.7\cubeWPF\obj\Debug\cubeWPF.application
+D:\mischa\programin\c#\github repo\cube\Cube-Rotate\cube 1.7\cubeWPF\obj\Debug\cubeWPF.csproj.CopyComplete
+D:\mischa\programin\c#\github repo\cube\Cube-Rotate\cube 1.7\cubeWPF\obj\Debug\cubeWPF.exe
+D:\mischa\programin\c#\github repo\cube\Cube-Rotate\cube 1.7\cubeWPF\obj\Debug\cubeWPF.pdb
