@@ -8,13 +8,21 @@
   </compatibleFrameworks>
   <dependency>
     <dependentAssembly dependencyType="install" codebase="cubeWPF.exe.manifest" size="4521">
+<<<<<<< Updated upstream:cube 1.7/cubeWPF/obj/Debug/cubeWPF.application
       <assemblyIdentity name="cubeWPF.exe" version="1.0.0.7" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
+=======
+      <assemblyIdentity name="cubeWPF.exe" version="1.0.0.6" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
+>>>>>>> Stashed changes:cube 1.6/cubeWPF/bin/Debug/cubeWPF.application
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+<<<<<<< Updated upstream:cube 1.7/cubeWPF/obj/Debug/cubeWPF.application
         <dsig:DigestValue>6LVjmyE0nx4uvQU/7g6si9MIUk/JJCO3uIaHBwW53hc=</dsig:DigestValue>
+=======
+        <dsig:DigestValue>3aR8FhitrNwgJUcpVB8cx5R+8Yk3RQlPTdfC9N5ELDo=</dsig:DigestValue>
+>>>>>>> Stashed changes:cube 1.6/cubeWPF/bin/Debug/cubeWPF.application
       </hash>
     </dependentAssembly>
   </dependency>

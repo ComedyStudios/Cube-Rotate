@@ -49,7 +49,23 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+<<<<<<< Updated upstream:cube 1.7/cubeWPF/bin/Debug/cubeWPF.exe.manifest
         <dsig:DigestValue>XXOFZVUWVnl11/DrNM7CbhTZaM8GWE5MEqWqPNyhWLc=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Newtonsoft.Json.dll" size="700336">
+      <assemblyIdentity name="Newtonsoft.Json" version="12.0.0.0" publicKeyToken="30AD4FE6B2A6AEED" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>f5ErKKB8Im4L46z7L1fwUFOKugEA+h8L8sOfGh8dqBQ=</dsig:DigestValue>
+=======
+        <dsig:DigestValue>0GEpoaPboBZsxixCaYocKY//kI7ETCroANgtTjoYUl8=</dsig:DigestValue>
+>>>>>>> Stashed changes:cube 1.6/cubeWPF/obj/Debug/cubeWPF.exe.manifest
       </hash>
     </dependentAssembly>
   </dependency>
@@ -65,13 +81,22 @@
       </hash>
     </dependentAssembly>
   </dependency>
-  <file name="cubeWPF.exe.config" size="189">
+  <file name="cubeWPF.exe.config" size="184">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>R+Wg8QGvQVHX8T0ta/qbhH1bXkqY0fRnS3wBV3J0bN8=</dsig:DigestValue>
+      <dsig:DigestValue>X+GtgC9o18R9u9jmAWK6iKuu0WLaXTgchdPkk1MRli4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="json1.json" size="497">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>7ZjeTdHpjm3X1yA9d5ZZHYjafwM8ooITRZpE09TsSAI=</dsig:DigestValue>
     </hash>
   </file>
   <file name="json1.json" size="497">

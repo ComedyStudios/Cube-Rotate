@@ -139,6 +139,7 @@ D:\mischa\programin\c#\github repo\cube\Cube-Rotate\cube 1.6\cubeWPF\obj\Debug\c
 D:\mischa\programin\c#\github repo\cube\Cube-Rotate\cube 1.6\cubeWPF\bin\Debug\json1.json
 D:\mischa\programin\c#\github repo\cube\Cube-Rotate\cube 1.6\cubeWPF\obj\Debug\cubeWPF_Content.g.cs
 D:\mischa\programin\c#\github repo\cube\Cube-Rotate\cube 1.6\cubeWPF\obj\Debug\cubeWPF.csprojAssemblyReference.cache
+<<<<<<< Updated upstream:cube 1.7/cubeWPF/obj/Debug/cubeWPF.csproj.FileListAbsolute.txt
 D:\mischa\programin\c#\github repo\cube\Cube-Rotate\cube 1.7\cubeWPF\bin\Debug\json1.json
 D:\mischa\programin\c#\github repo\cube\Cube-Rotate\cube 1.7\cubeWPF\bin\Debug\cubeWPF.exe.config
 D:\mischa\programin\c#\github repo\cube\Cube-Rotate\cube 1.7\cubeWPF\bin\Debug\cubeWPF.exe.manifest
@@ -163,3 +164,29 @@ D:\mischa\programin\c#\github repo\cube\Cube-Rotate\cube 1.7\cubeWPF\obj\Debug\c
 D:\mischa\programin\c#\github repo\cube\Cube-Rotate\cube 1.7\cubeWPF\obj\Debug\cubeWPF.csproj.CopyComplete
 D:\mischa\programin\c#\github repo\cube\Cube-Rotate\cube 1.7\cubeWPF\obj\Debug\cubeWPF.exe
 D:\mischa\programin\c#\github repo\cube\Cube-Rotate\cube 1.7\cubeWPF\obj\Debug\cubeWPF.pdb
+=======
+C:\Users\muluc\Downloads\Cube-Rotate-features\Cube-Rotate-features\cube 1.6\cubeWPF\bin\Debug\json1.json
+C:\Users\muluc\Downloads\Cube-Rotate-features\Cube-Rotate-features\cube 1.6\cubeWPF\bin\Debug\cubeWPF.exe.config
+C:\Users\muluc\Downloads\Cube-Rotate-features\Cube-Rotate-features\cube 1.6\cubeWPF\bin\Debug\cubeWPF.exe.manifest
+C:\Users\muluc\Downloads\Cube-Rotate-features\Cube-Rotate-features\cube 1.6\cubeWPF\bin\Debug\cubeWPF.application
+C:\Users\muluc\Downloads\Cube-Rotate-features\Cube-Rotate-features\cube 1.6\cubeWPF\bin\Debug\cubeWPF.exe
+C:\Users\muluc\Downloads\Cube-Rotate-features\Cube-Rotate-features\cube 1.6\cubeWPF\bin\Debug\cubeWPF.pdb
+C:\Users\muluc\Downloads\Cube-Rotate-features\Cube-Rotate-features\cube 1.6\cubeWPF\bin\Debug\Newtonsoft.Json.dll
+C:\Users\muluc\Downloads\Cube-Rotate-features\Cube-Rotate-features\cube 1.6\cubeWPF\bin\Debug\Newtonsoft.Json.xml
+C:\Users\muluc\Downloads\Cube-Rotate-features\Cube-Rotate-features\cube 1.6\cubeWPF\obj\Debug\cubeWPF.csprojAssemblyReference.cache
+C:\Users\muluc\Downloads\Cube-Rotate-features\Cube-Rotate-features\cube 1.6\cubeWPF\obj\Debug\MainWindow.g.cs
+C:\Users\muluc\Downloads\Cube-Rotate-features\Cube-Rotate-features\cube 1.6\cubeWPF\obj\Debug\App.g.cs
+C:\Users\muluc\Downloads\Cube-Rotate-features\Cube-Rotate-features\cube 1.6\cubeWPF\obj\Debug\cubeWPF_Content.g.cs
+C:\Users\muluc\Downloads\Cube-Rotate-features\Cube-Rotate-features\cube 1.6\cubeWPF\obj\Debug\cubeWPF_MarkupCompile.cache
+C:\Users\muluc\Downloads\Cube-Rotate-features\Cube-Rotate-features\cube 1.6\cubeWPF\obj\Debug\cubeWPF_MarkupCompile.lref
+C:\Users\muluc\Downloads\Cube-Rotate-features\Cube-Rotate-features\cube 1.6\cubeWPF\obj\Debug\MainWindow.baml
+C:\Users\muluc\Downloads\Cube-Rotate-features\Cube-Rotate-features\cube 1.6\cubeWPF\obj\Debug\cubeWPF.g.resources
+C:\Users\muluc\Downloads\Cube-Rotate-features\Cube-Rotate-features\cube 1.6\cubeWPF\obj\Debug\cubeWPF.Properties.Resources.resources
+C:\Users\muluc\Downloads\Cube-Rotate-features\Cube-Rotate-features\cube 1.6\cubeWPF\obj\Debug\cubeWPF.csproj.GenerateResource.cache
+C:\Users\muluc\Downloads\Cube-Rotate-features\Cube-Rotate-features\cube 1.6\cubeWPF\obj\Debug\cubeWPF.csproj.CoreCompileInputs.cache
+C:\Users\muluc\Downloads\Cube-Rotate-features\Cube-Rotate-features\cube 1.6\cubeWPF\obj\Debug\cubeWPF.exe.manifest
+C:\Users\muluc\Downloads\Cube-Rotate-features\Cube-Rotate-features\cube 1.6\cubeWPF\obj\Debug\cubeWPF.application
+C:\Users\muluc\Downloads\Cube-Rotate-features\Cube-Rotate-features\cube 1.6\cubeWPF\obj\Debug\cubeWPF.csproj.CopyComplete
+C:\Users\muluc\Downloads\Cube-Rotate-features\Cube-Rotate-features\cube 1.6\cubeWPF\obj\Debug\cubeWPF.exe
+C:\Users\muluc\Downloads\Cube-Rotate-features\Cube-Rotate-features\cube 1.6\cubeWPF\obj\Debug\cubeWPF.pdb
+>>>>>>> Stashed changes:cube 1.6/cubeWPF/obj/Debug/cubeWPF.csproj.FileListAbsolute.txt
