@@ -16,82 +16,46 @@ namespace cubeWPF
         private float centerX;
         private float centerY;
 
-        private List<Cordinate> _points = new List<Cordinate> { 
-            new Cordinate { x = -100, y = -100, z = -100 },
-            new Cordinate { x = -100, y = 100, z = -100 },
-            new Cordinate { x = 100, y = 100, z = -100 },
-            new Cordinate { x = 100, y = -100, z = -100 },
-            new Cordinate { x = 100, y = 100, z = 100 },
-            new Cordinate { x = -100, y = 100, z = 100 },
-            new Cordinate { x = -100, y = -100, z = 100 },
-            new Cordinate { x = 100, y = -100, z = 100 },
+        //List of points for the lines
+        
 
-
-        };
-        private List<Lines> _Lines = new List<Lines>
-        {
-           new Lines {id1 = 0, id2 =1 },
-           new Lines {id1 = 1, id2 =2 },
-           new Lines {id1 = 2, id2 =3 },
-           new Lines {id1 = 3, id2 =0 },
-           new Lines {id1 = 2, id2 =4 },
-           new Lines {id1 = 1, id2 =5 },
-           new Lines {id1 = 0, id2 =6 },
-           new Lines {id1 = 3, id2 =7 },
-           new Lines {id1 = 4, id2 =5 },
-           new Lines {id1 = 5, id2 =6 },
-           new Lines {id1 = 6, id2 =7 },
-           new Lines {id1 = 7, id2 =4 },
-        };
-        private List<Line> _lines = new List<Line>();
+        private Scene3D scene;
 
         DispatcherTimer timer = new DispatcherTimer();
 
         private string jsonPath = @".\json1.json";
-        private JsonFormat Variables;
-        Json json = new Json();
-        
-        Real real = new Real();
 
-        action a = new action();
         public MainWindow()
         {
             InitializeComponent();
-
-            Variables = json.Read(jsonPath);
-
-            if (Variables != null)
-            {
-                _Lines = Variables.l;
-                _points = Variables.p;
-            }
-            
 
             centerX = (float)grid.Width / 2;
             centerY = (float)grid.Height / 2;
             timer.Interval = new TimeSpan(0,0,0,0,30);
 
-            
-           _lines = real.MakeLine(_Lines,_lines,_points,centerX,centerY);
+            // creates lines and adds them to the window grid
+            scene = new Scene3D();
+            scene.Load(jsonPath, centerX, centerY);
 
-            foreach (Line line in _lines)
-            {
-                grid.Children.Add(line);
-            }
+            scene.addToGrid(grid);
 
-            real.MakeUnvsible(_Lines, _lines, _points);
+            // is needed beacause else if we start the window and have no input the lines will be visible
+            scene.MakeUnvisible();
         }
 
+
+        //saves the rotaiton if needed
         protected override void OnClosed(EventArgs e)
         {
             if (save.IsChecked == true)
             {
-                a.safeRotation(Variables, _points, _Lines,jsonPath);
+                scene.Save(jsonPath);
             }
-            
+
             base.OnClosed(e);
         }
 
+        //rotates if button is pressed 
         protected override void OnKeyDown(KeyEventArgs e)
         {
             base.OnKeyDown(e);
@@ -123,9 +87,12 @@ namespace cubeWPF
 
             }
         }
+
+        //stops rotaiton if the button isnt pressed
         protected override void OnKeyUp(KeyEventArgs e)
         {
             base.OnKeyUp(e);
+
 
             switch (e.Key)
             {
@@ -146,17 +113,17 @@ namespace cubeWPF
 
         private void RotaitingOnX(object sender, EventArgs e)
         {
-            real.RotatingOnX(_points, _lines, _Lines, centerX, centerY, rotatingAngleX);
+            scene.RotatingOnX( centerX, centerY, rotatingAngleX);
         }
 
         private void RotaitingOnY(object sender, EventArgs e)
         {
-            real.RotatingOnY(_points,_lines,_Lines,centerX,centerY,rotatingAngleY);
+            scene.RotatingOnY(centerX,centerY,rotatingAngleY);
         }
 
         private void ButtonBase_OnClicktn_reset(object sender, RoutedEventArgs e)
         {
-           _points = a.reset(_points, _Lines, _lines, centerY, centerX);
+            scene.Reset(centerX, centerY);
         }
     }
 }

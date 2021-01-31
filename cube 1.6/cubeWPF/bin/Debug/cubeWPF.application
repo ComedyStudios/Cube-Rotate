@@ -7,14 +7,14 @@
     <framework targetVersion="4.7.2" profile="Full" supportedRuntime="4.0.30319" />
   </compatibleFrameworks>
   <dependency>
-    <dependentAssembly dependencyType="install" codebase="cubeWPF.exe.manifest" size="4521">
+    <dependentAssembly dependencyType="install" codebase="cubeWPF.exe.manifest" size="4777">
       <assemblyIdentity name="cubeWPF.exe" version="1.0.0.6" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>3aR8FhitrNwgJUcpVB8cx5R+8Yk3RQlPTdfC9N5ELDo=</dsig:DigestValue>
+        <dsig:DigestValue>CQv/zEkIOZqc3Jw5G7uSFsAEAVbxE2+1q1+ZhqMoGzQ=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
